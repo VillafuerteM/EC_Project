@@ -1,8 +1,8 @@
 # Proyecto de Estadística Computacional (MCD ITAM 2023)
-Authors:
-Blanca
-Yuneri
-Mariano Villafuerte - 156057
+Authors:  
+Blanca  
+Yuneri  
+Mariano Villafuerte - 156057  
 
 
 ## Objetivo
