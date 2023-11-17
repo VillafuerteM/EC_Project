@@ -1,7 +1,7 @@
 # Proyecto de Estadística Computacional (MCD ITAM 2023)
 Authors:  
-Blanca  
-Yuneri  
+Blanca E. García -   
+Yuneri Pérez - 199813
 Mariano Villafuerte - 156057  
 
 
@@ -9,7 +9,7 @@ Mariano Villafuerte - 156057
 Desarrollar una aplicación web usando Shiny que integre el uso de un modelo predictivo. En este caso, la aplicación de Shiny le pide al usuario introducir ciertas características de algún vino que desea calificar
 
 ## Docker
-Para crear el Docker, se corre este código el Powershell
+Para crear la imagen de Postgres en Docker, se corre el siguiente código en terminal (aplica desde Mac M1 y M2)
 ```bash
 docker run `
     -p 5432:5432 `
