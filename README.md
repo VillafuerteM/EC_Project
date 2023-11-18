@@ -1,4 +1,4 @@
-![](https://github.com/VillafuerteM/EC_Project/blob/main/imgs/Vino.jpeg) ![](https://github.com/VillafuerteM/EC_Project/blob/main/imgs/descarga.png)
+![](https://github.com/VillafuerteM/EC_Project/blob/main/imgs/Vino.jpeg)           ![](https://github.com/VillafuerteM/EC_Project/blob/main/imgs/descarga.png)
 
 # Proyecto de Estadística Computacional 
 # (MCD ITAM Otoño 2023)
