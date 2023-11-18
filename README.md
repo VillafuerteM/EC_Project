@@ -28,3 +28,40 @@ docker run \
        -d \
        postgres
 ```
+Luego, desde R se crea la base de datos inicial. Se usan los datos de calidad de vinos 
+```r
+library(dplyr)
+
+winequality <- read.table("https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-white.csv", 
+                          header = TRUE, 
+                          sep = ";") %>%
+  mutate(type='white') %>%
+  rbind(read.table("https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv", 
+                   header = TRUE, 
+                   sep = ";") %>%
+          mutate(type='red'))
+
+# usando una conexión de PostgreSQL
+con <- dbConnect(
+  RPostgreSQL::PostgreSQL(),
+  dbname = "",
+  host = "localhost",
+  port = ,
+  user = "",
+  password = ""
+)
+
+copy_to(
+  con, winequality, "wine",
+  overwrite=TRUE, temporary = FALSE,
+  indexes = list(
+    colnames(winequality)
+  )
+)
+
+# verificar si existe la tabla copiada
+dbListTables(con)
+
+# cerramos la conexión
+dbDisconnect(con)
+```
