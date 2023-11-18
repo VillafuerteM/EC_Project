@@ -48,11 +48,10 @@ docker run `
 O si se hace desde una terminal de Ubuntu:
 ```bash
 docker run \
-       -p 5432:5432 \
-       -e POSTGRES_PASSWORD= \
-       -e POSTGRES_INITDB_ARGS="--auth-local=md5" \
-       -d \
-       postgres
+   -p 5432:5432 \
+   -e POSTGRES_PASSWORD=postgres \
+   -d \
+   postgres
 ```
 Luego, desde R se crea la base de datos inicial. Se usan los datos de calidad de vinos 
 ```r
