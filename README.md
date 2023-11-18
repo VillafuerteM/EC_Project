@@ -1,7 +1,7 @@
 # Proyecto de Estadística Computacional (MCD ITAM 2023)
 Authors:  
 Blanca E. García -   
-Yuneri Pérez - 199813
+Yuneri Pérez - 199813  
 Mariano Villafuerte - 156057  
 
 
