@@ -4,7 +4,7 @@
 
 | Nombre                        |  CU    | Correo Electronico             | Usuario Gh   |
 |-------------------------------|--------|--------------------------------|--------------|
-| Blanca Estela García Majarrez | 18xxxx | bgarci11@itam.mx               | BGARCIAMA    |
+| Blanca Estela García Majarrez | 118886 | bgarci11@itam.mx               | BGARCIAMA    |
 | Yuneri Pérez Arellano         | 199813 | yperezar@itam.mx               | YunPerez     |
 | Mariano Villafuerte Gonzalez  | 156057 | mariano.villafuerte@itam.mx    | VillafuerteM |
 
