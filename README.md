@@ -22,7 +22,7 @@ xxxxx
 Desarrollar una aplicación web usando Shiny que integre el uso de un modelo predictivo para calificar un vino de acuerdo con base en sus caracteristicas. 
 En este caso, la aplicación de Shiny le pedirá al usuario, introducir ciertas características de algún vino que desea calificar.
 
-# Base de datos
+# Base de datos ☑
 La base de datos que se analizará en este proyecto será la de [Wine Quality](https://archive.ics.uci.edu/dataset/186/wine+quality) obtenida de [Wine Quality Datasets](http://www3.dsi.uminho.pt/pcortez/wine/).
 
 # Infraestructura y Ejecución ⚙
