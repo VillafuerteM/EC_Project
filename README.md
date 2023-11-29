@@ -15,30 +15,30 @@
 | Mariano Villafuerte Gonzalez  | 156057 | mariano.villafuerte@itam.mx    | VillafuerteM |
 
 
-## Comprensión de la información
+## Comprensión de la información  🧠
 xxxxx
 
-## Objetivo del proyecto
+## Objetivo del proyecto  🎯
 Desarrollar una aplicación web usando Shiny que integre el uso de un modelo predictivo para calificar un vino de acuerdo con base en sus caracteristicas. 
 En este caso, la aplicación de Shiny le pedirá al usuario, introducir ciertas características de algún vino que desea calificar.
 
-# Base de datos ☑  ✍
+# Base de datos  ✍
 La base de datos que se analizará en este proyecto será la de [Wine Quality](https://archive.ics.uci.edu/dataset/186/wine+quality) obtenida de [Wine Quality Datasets](http://www3.dsi.uminho.pt/pcortez/wine/).
 
-# Infraestructura y Ejecución ⚙
+# Infraestructura y Ejecución  ⚙
 
 Para ejecutar este producto de datos se necesita lo siguiente:
 - Sistema operativo Linux/Mac con Docker Desktop instalado.
 - Clonar el repositorio en el equipo.
 
-**Para levantar la imagen de docker y la base de datos:**
+**Para levantar la imagen de docker y la base de datos:**  📸
 1. Descargar el archivo `Wines.csv` que está disponible en el siguiente [**Drive**](https://drive.google.com/drive/folders/1KPu_sOSKWICQB6PY9IzwpVTDCTpSzUWx), y colocarlo en la carpeta `data` del repositorio.
 2. Construir la imagen de docker:
    En la raíz del repositorio, ejecutar estos 2 comandos en la terminal (se necesitará ingresar la contraseña del usuario de la computadora donde se está trabajando):
    1. > `make build`
    2. > `make up` 
 
-**Para acceder a los servicios del producto de datos:**
+**Para acceder a los servicios del producto de datos:**  📡
 1. Abrir el explorador de internet e ir a la siguiente dirección:
    1. > `localhost:5000/main`
 2. Se accede a la página principal que contiene 4 botones con las siguientes funciones:
