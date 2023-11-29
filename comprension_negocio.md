@@ -1,4 +1,4 @@
-## Comprensión de negocio
+## Comprensión de negocio 🍷
 
 ### Introducción
 
