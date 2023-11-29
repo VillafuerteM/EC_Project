@@ -2,17 +2,17 @@
 
 # Proyecto de Estadística Computacional 
 # (MCD ITAM Otoño 2023)
-## Proyecto Final: Calificación de Vino
+## Proyecto Final: Calificación de Vino 🍷
 
 ![](https://github.com/VillafuerteM/EC_Project/blob/main/imgs/Vino.jpeg)           
 
 ## Integrantes del equipo
 
-| Nombre                        |  CU    | Correo Electronico             | Usuario Gh   |
-|-------------------------------|--------|--------------------------------|--------------|
-| Blanca Estela García Majarrez | 118886 | bgarci11@itam.mx               | BGARCIAMA    |
-| Yuneri Pérez Arellano         | 199813 | yperezar@itam.mx               | YunPerez     |
-| Mariano Villafuerte Gonzalez  | 156057 | mariano.villafuerte@itam.mx    | VillafuerteM |
+| Nombre                        |  CU    | Correo Electrónico             | Usuario Github |
+|-------------------------------|--------|--------------------------------|----------------|
+| Blanca Estela García Majarrez | 118886 | bgarci11@itam.mx               | BGARCIAMA      |
+| Yuneri Pérez Arellano         | 199813 | yperezar@itam.mx               | YunPerez       |
+| Mariano Villafuerte Gonzalez  | 156057 | mariano.villafuerte@itam.mx    | VillafuerteM   |
 
 
 # Comprensión de la información  🧠
@@ -28,6 +28,12 @@ La base de datos que se analizará en este proyecto será la de [Wine Quality](h
 Se considera información de vino verde, un producto único de la región de Minho (noroeste) de Portugal. Este vino representa el 15% de la producción total portuguesa y alrededor del 10% se exporta, en su mayoría vinos blancos. Se analizará las dos variantes más habituales, vino blanco y vino tinto procedente de la región del vino verde. Los datos se recogieron desde mayo de 2004 hasta febrero de 2007 utilizando únicamente datos de muestras con denominación de origen.
 
 # Infraestructura y Ejecución  ⚙
+
+## Requerimientos de Software herramientas recomendadas
+
+1. [Cuenta de Github](https://github.com)
+2. [VSCodeIDE](https://code.visualstudio.com/)
+3. [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
 Para ejecutar este producto de datos se necesita lo siguiente:
 - Sistema operativo Linux/Mac con Docker Desktop instalado.
