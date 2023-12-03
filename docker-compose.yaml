@@ -15,3 +15,17 @@ services:
       - ../data/data2:/var/lib/postgresql/data
     ports:
       - 5432:5432
+  web:
+    build: ./api
+    env_file:
+      - ".env"
+    ports:
+      - 8080:8080
+    depends_on:
+      - "db"
+  shiny:
+    build: ./shiny
+    ports:
+      - 5001:4999
+volumes:
+  pg_api:
