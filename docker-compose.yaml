@@ -1,66 +1,17 @@
-version: "3.8"
+version: '3.7'
 
 services:
-  api:
-    build:
-      context: .
-    command: python app.py
-    environment:
-      FLASK_ENV: development
-    ports:
-      - "5000:5000"
-    volumes:
-    - .:/app
-
   db:
-    image: postgres
-    restart: always
-    ports:
-      - "5432:5432"
-    environment:
-      - DATABASE_HOST=127.0.0.1
-      - POSTGRES_USER=root
-      - POSTGRES_PASSWORD=root
-      - POSTGRES_DB=rodent
-
-  pgadmin:
-    image: dpage/pgadmin4
-    environment:
-      PGADMIN_DEFAULT_EMAIL: "admin@admin.com"
-      PGADMIN_DEFAULT_PASSWORD: "admin"
-    ports:
-      - "8000:80"
-    depends_on:
-      - db
-
-
-#-------------------------------------------------------------
-version: '3'
-
-services:
-  postgres:
     image: postgres:latest
+    container_name: postgres
+    
     environment:
-      POSTGRES_DB: mydatabase
-      POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: mypassword
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=postgres  
+    volumes:
+      - ./data/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./data/winequality.csv:/data/winequality.csv
+      - ../data/data2:/var/lib/postgresql/data
     ports:
-      - "5432:5432"
-
-  flask-api:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - "5000:5000"
-    depends_on:
-      - postgres
-
-  shiny-app:
-    build:
-      context: ./shiny
-      dockerfile: Dockerfile
-    ports:
-      - "80:80"
-    depends_on:
-      - flask-api
+      - 5432:5432

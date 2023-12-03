@@ -1,9 +1,7 @@
 # Ajustar a los nuestros
 
-#Flask==0.12.2
 flask-marshmallow==0.14.0
 Flask-Migrate==3.0.1
-Flask-SQLAlchemy==2.5.1
 numpy==1.19.5
 psycopg2-binary==2.8.6
 python-dateutil==2.8.1
@@ -15,7 +13,14 @@ SQLAlchemy==1.4.14
  
 # -----------------------------
 
-Flask==1.1.2
-joblib==1.1.0
-pandas==1.3.3
-scikit-learn==0.24.2
+flask==2.2.2
+joblib==1.2.0
+pandas==1.5.3
+scikit-learn==1.3.0
+sklearn==1.3.0
+numpy==1.24.3
+matplotlib==3.7.1
+seaborn==0.12.2
+xgboost==2.0.2
+psycopg2==2.9.9
+json==2.0.9
