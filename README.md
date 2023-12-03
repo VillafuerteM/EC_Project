@@ -2,30 +2,38 @@
 
 # Proyecto de Estadística Computacional 
 # (MCD ITAM Otoño 2023)
-## Proyecto Final: Calificación de Vino
+## Proyecto Final: Calificación de Vino 🍷
 
 ![](https://github.com/VillafuerteM/EC_Project/blob/main/imgs/Vino.jpeg)           
 
-### Integrantes del equipo
+## Integrantes del equipo
 
-| Nombre                        |  CU    | Correo Electronico             | Usuario Gh   |
-|-------------------------------|--------|--------------------------------|--------------|
-| Blanca Estela García Majarrez | 118886 | bgarci11@itam.mx               | BGARCIAMA    |
-| Yuneri Pérez Arellano         | 199813 | yperezar@itam.mx               | YunPerez     |
-| Mariano Villafuerte Gonzalez  | 156057 | mariano.villafuerte@itam.mx    | VillafuerteM |
+| Nombre                        |  CU    | Correo Electrónico             | Usuario Github |
+|-------------------------------|--------|--------------------------------|----------------|
+| Blanca Estela García Majarrez | 118886 | bgarci11@itam.mx               | BGARCIAMA      |
+| Yuneri Pérez Arellano         | 199813 | yperezar@itam.mx               | YunPerez       |
+| Mariano Villafuerte Gonzalez  | 156057 | mariano.villafuerte@itam.mx    | VillafuerteM   |
 
 
-## Comprensión de la información  🧠
-xxxxx
+# Comprensión de la información  🧠
+Consulte el documento: [comprension_negocio.md](https://github.com/VillafuerteM/EC_Project/edit/main/comprension_negocio.md)
 
-## Objetivo del proyecto  🎯
-Desarrollar una aplicación web usando Shiny que integre el uso de un modelo predictivo para calificar un vino de acuerdo con base en sus caracteristicas. 
+# Objetivo del proyecto  🎯
+Desarrollar una aplicación web usando Shiny que integre el uso de un modelo predictivo para calificar un vino de acuerdo a sus caracteristicas fisicoquímicas (como valores de densidad, alcohol y pH). 
 En este caso, la aplicación de Shiny le pedirá al usuario, introducir ciertas características de algún vino que desea calificar.
 
 # Base de datos  ✍
 La base de datos que se analizará en este proyecto será la de [Wine Quality](https://archive.ics.uci.edu/dataset/186/wine+quality) obtenida de [Wine Quality Datasets](http://www3.dsi.uminho.pt/pcortez/wine/).
 
+Se considera información de vino verde, un producto único de la región de Minho (noroeste) de Portugal. Este vino representa el 15% de la producción total portuguesa y alrededor del 10% se exporta, en su mayoría vinos blancos. Se analizará las dos variantes más habituales, vino blanco y vino tinto procedente de la región del vino verde. Los datos se recogieron desde mayo de 2004 hasta febrero de 2007 utilizando únicamente datos de muestras con denominación de origen.
+
 # Infraestructura y Ejecución  ⚙
+
+## Requerimientos de Software herramientas recomendadas
+
+1. [Cuenta de Github](https://github.com)
+2. [VSCodeIDE](https://code.visualstudio.com/)
+3. [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
 Para ejecutar este producto de datos se necesita lo siguiente:
 - Sistema operativo Linux/Mac con Docker Desktop instalado.
