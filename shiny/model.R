@@ -20,6 +20,7 @@ winequality <- read.table("https://archive.ics.uci.edu/ml/machine-learning-datab
                    sep = ";") %>%
           mutate(type='red'))
 
+
 # modelo ----
 # convertimos a factores y nos quedamos con las variables necesarias
 winequality <- winequality %>% 
@@ -27,6 +28,9 @@ winequality <- winequality %>%
          quality=as.factor(quality),
          type=as.factor(type)) %>%
   select(density, alcohol, citric.acid, residual.sugar, pH, type, quality)
+
+winequality <- winequality %>%
+  mutate(across(-c(type, quality), ~9 * (. - min(.))/(max(.) - min(.)) + 1))
 
 # Split the data into training and testing sets
 set.seed(102938)
@@ -72,3 +76,4 @@ confusionMatrix(t)
 
 
 saveRDS(xgb_model, "xgboost_model.rds")
+write.csv(df, 'wine_modified.csv')
