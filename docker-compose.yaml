@@ -4,7 +4,6 @@ services:
   db:
     image: postgres:latest
     container_name: postgres
-    
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_DB=postgres
@@ -23,9 +22,7 @@ services:
       - 8080:8080
     depends_on:
       - "db"
-  shiny:
-    build: ./shiny
+  dash:
+    build: ./dash
     ports:
       - 5001:4999
-volumes:
-  pg_api:

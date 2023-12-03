@@ -4,9 +4,14 @@ import psycopg2
 import psycopg2.extras
 import os
 
+#os.environ['PGHOST'] = 'localhost'
+#os.environ['POSTGRES_USER'] = 'postgres'
+#os.environ['POSTGRES_DB'] = 'postgres'
+#os.environ['POSTGRES_PASSWORD'] = 'postgres'
+ 
 # Estructura del uri:
 # "motor://user:password@host:port/database"
-database_uri = f'postgresql://{os.environ["PGUSR"]}:{os.environ["PGPASS"]}@{os.environ["PGHOST"]}:5432/{os.environ["PGDB"]}'
+database_uri = f'postgresql://{os.environ["POSTGRES_USER"]}:{os.environ["POSTGRES_PASSWORD"]}@{os.environ["PGHOST"]}:5432/{os.environ["POSTGRES_DB"]}'
 
 app = Flask(__name__)
 conn = psycopg2.connect(database_uri)
@@ -29,6 +34,10 @@ def winequality():
     query = "select * from winequality limit 100"
     return execute_query(query)
 
+@app.route("/")
+def home():
+    query = "select * from winequality limit 100"
+    return execute_query(query)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True, port=8080)

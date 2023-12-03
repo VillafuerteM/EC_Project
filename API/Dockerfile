@@ -17,4 +17,6 @@ ENV PATH="/venv/bin:$PATH"
 
 # Copy the requirements.txt file and install Python dependencies
 COPY requirements.txt /
-#RUN pip install --no-cache-dir -r /requireme
+RUN pip install --no-cache-dir -r requirements.txt
+
+CMD ["python", "main.py", "--host", "0.0.0.0", "--port", "8080"]
