@@ -48,11 +48,11 @@ Para ejecutar este producto de datos se necesita lo siguiente:
 
 **Para acceder a los servicios del producto de datos:**  📡
 1. Abrir el explorador de internet e ir a la siguiente dirección:
-   1. > `localhost:5000/main`
-2. Se accede a la página principal que contiene 4 botones con las siguientes funciones:
-   5. Estarán disponibles las siguientes tablas:
-      1. `all_info`:  Contiene los registros del dataset de entrenamiento del modelo.
-      2. `predicted_results`:  Contiene las predicciones realizadas.  
+   1. > `[localhost:5000/main](http://127.0.0.1:8050/)`
+2. Se accede a la página principal que contiene una gráfica de correlación entre dos variables a elegir por el usuario sobre la base de datos de vinos:
+   1. Estará disponible la siguiente información:
+      1. `Analisis exploratorio`: Gráfica de correlacion entre dos variables a elegir.
+      2. `Wine Quality Prediction`:  A partir de los datos ingresados por el usuario y después dar clic en `Predict`, mostrará la predicción del modelo.
 4. Para salir de este producto de datos, hay que cerrar las pestañas del explorador y ejecutar `Ctrl+C` en la terminal donde se está corriendo la imagen de Docker.
 
 
